@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86538b9a-31de-466f-af40-2e6b5d7616c4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TOGsKePx3mrnRUFxtbUaVaYGQg" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CinemaReservation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.CinemaReservation" />
+      <module name="minimal-pom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CinemaReservation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86538b9a-31de-466f-af40-2e6b5d7616c4" name="Default Changelist" comment="" />
+      <created>1573323933611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573323933611</updated>
+      <workItem from="1573323935118" duration="3645000" />
+      <workItem from="1573329129646" duration="1195000" />
+      <workItem from="1573388683925" duration="15177000" />
+      <workItem from="1573407653802" duration="906000" />
+      <workItem from="1573479747376" duration="5578000" />
+      <workItem from="1573506123860" duration="1014000" />
+      <workItem from="1573661117605" duration="1339000" />
+      <workItem from="1573743992991" duration="1052000" />
+      <workItem from="1573760823526" duration="3675000" />
+      <workItem from="1573822853592" duration="1059000" />
+      <workItem from="1573904084129" duration="4340000" />
+      <workItem from="1573921173964" duration="4584000" />
+      <workItem from="1573985233060" duration="7487000" />
+      <workItem from="1574004948236" duration="2027000" />
+      <workItem from="1574155731750" duration="967000" />
+      <workItem from="1574151230886" duration="5138000" />
+      <workItem from="1574181531488" duration="241000" />
+      <workItem from="1574188034920" duration="768000" />
+      <workItem from="1574189925821" duration="1091000" />
+      <workItem from="1574256969410" duration="657000" />
+      <workItem from="1574335955749" duration="2271000" />
+      <workItem from="1575103405316" duration="257000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
