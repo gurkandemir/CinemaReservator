@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CinemaReservation</string>
+    <string name="title_movies">Saloons</string>
+    <string name="title_my_tickets">My Tickets</string>
+</resources>
