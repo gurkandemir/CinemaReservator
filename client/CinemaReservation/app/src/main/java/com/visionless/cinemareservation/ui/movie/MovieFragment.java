@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.visionless.cinemareservation.CustomHouseListAdapter;
+import com.visionless.cinemareservation.LoginActivity;
 import com.visionless.cinemareservation.R;
 import com.visionless.cinemareservation.model.Saloon;
 import com.visionless.cinemareservation.ui.movieList.MovieList;
@@ -97,7 +98,7 @@ public class MovieFragment extends Fragment {
             }
 
             try {
-                socket = new Socket("172.20.10.3", 8080);
+                socket = new Socket(LoginActivity.connection.getHost(), LoginActivity.connection.getPort());
                 writer = new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream()));
                 reader = new BufferedReader(
@@ -130,6 +131,30 @@ public class MovieFragment extends Fragment {
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
+            }
+
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

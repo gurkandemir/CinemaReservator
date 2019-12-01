@@ -133,7 +133,7 @@ public class Reservation extends AppCompatActivity {
         @Override
         protected JSONObject doInBackground(Void... voids) {
             try {
-                socket = new Socket("172.20.10.3", 8080);
+                socket = new Socket(LoginActivity.connection.getHost(), LoginActivity.connection.getPort());
                 writer = new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream()));
                 reader = new BufferedReader(
@@ -159,6 +159,30 @@ public class Reservation extends AppCompatActivity {
         }
 
         protected void onPostExecute(JSONObject req) {
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
             try {
                 if (req.getString("status").equals("200")) {
                     Toast.makeText(Reservation.this, "Success!", Toast.LENGTH_SHORT).show();

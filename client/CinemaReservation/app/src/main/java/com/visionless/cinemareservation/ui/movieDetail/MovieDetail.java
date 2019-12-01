@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.Toast;
 
+import com.visionless.cinemareservation.LoginActivity;
 import com.visionless.cinemareservation.R;
 import com.visionless.cinemareservation.Reservation;
 import com.visionless.cinemareservation.ui.movieList.MovieList;
@@ -89,7 +90,7 @@ public class MovieDetail extends AppCompatActivity {
             }
 
             try {
-                socket = new Socket("172.20.10.3", 8080);
+                socket = new Socket(LoginActivity.connection.getHost(), LoginActivity.connection.getPort());
                 writer = new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream()));
                 reader = new BufferedReader(
@@ -109,6 +110,30 @@ public class MovieDetail extends AppCompatActivity {
                 e.printStackTrace();
             } catch (JSONException e) {
                 e.printStackTrace();
+            }
+
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
 
             try {
@@ -169,7 +194,7 @@ public class MovieDetail extends AppCompatActivity {
         @Override
         protected JSONObject doInBackground(Void... voids) {
             try {
-                socket = new Socket("172.20.10.3", 8080);
+                socket = new Socket(LoginActivity.connection.getHost(), LoginActivity.connection.getPort());
                 writer = new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream()));
                 reader = new BufferedReader(
@@ -195,6 +220,30 @@ public class MovieDetail extends AppCompatActivity {
         }
 
         protected void onPostExecute(JSONObject req) {
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
             try {
                 if (req.getString("status").equals("200")) {
                     Toast.makeText(MovieDetail.this, "Reservation starts", Toast.LENGTH_SHORT).show();

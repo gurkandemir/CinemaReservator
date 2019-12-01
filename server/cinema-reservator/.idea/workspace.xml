@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86538b9a-31de-466f-af40-2e6b5d7616c4" name="Default Changelist" comment="" />
+    <list default="true" id="86538b9a-31de-466f-af40-2e6b5d7616c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movie/MovieFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movie/MovieFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieDetail/MovieDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieDetail/MovieDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieList/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieList/MovieList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/ticket/TicketFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/ticket/TicketFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/connections/ConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/connections/ConnectionHandler.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,10 +37,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1TOGsKePx3mrnRUFxtbUaVaYGQg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -92,10 +108,26 @@
       <workItem from="1574256969410" duration="657000" />
       <workItem from="1574335955749" duration="2271000" />
       <workItem from="1575103405316" duration="257000" />
+      <workItem from="1575107536276" duration="58000" />
+      <workItem from="1575216165355" duration="524000" />
+      <workItem from="1575221269506" duration="1089000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

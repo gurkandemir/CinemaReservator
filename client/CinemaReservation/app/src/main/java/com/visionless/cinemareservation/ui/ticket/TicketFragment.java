@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.visionless.cinemareservation.CustomTicketListAdapter;
+import com.visionless.cinemareservation.LoginActivity;
 import com.visionless.cinemareservation.R;
 import com.visionless.cinemareservation.model.Saloon;
 import com.visionless.cinemareservation.model.Ticket;
@@ -79,7 +80,7 @@ public class TicketFragment extends Fragment {
             }
 
             try {
-                socket = new Socket("172.20.10.3", 8080);
+                socket = new Socket(LoginActivity.connection.getHost(), LoginActivity.connection.getPort());
                 writer = new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream()));
                 reader = new BufferedReader(
@@ -106,12 +107,36 @@ public class TicketFragment extends Fragment {
                     JSONArray tickets1 = req.getJSONArray("tickets");
                     for (int index = 0; index < tickets1.length(); index++) {
                         JSONObject object = tickets1.getJSONObject(index);
-                        Ticket ticket = new Ticket(object.getInt("seat") + 1, object.getString("film"), object.getString("saloon"), object.getString("date") ,object.getString("time"));
+                        Ticket ticket = new Ticket((object.getInt("seat") % 40) + 1, object.getString("film"), object.getString("saloon"), object.getString("date") ,object.getString("time"));
                         tickets.add(ticket);
                     }
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
+            }
+
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

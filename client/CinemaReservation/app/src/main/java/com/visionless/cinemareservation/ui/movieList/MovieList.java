@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.visionless.cinemareservation.CustomMovieListAdapter;
+import com.visionless.cinemareservation.LoginActivity;
 import com.visionless.cinemareservation.MainActivity;
 import com.visionless.cinemareservation.R;
 import com.visionless.cinemareservation.model.Film;
@@ -112,7 +113,7 @@ public class MovieList extends AppCompatActivity {
             }
 
             try {
-                socket = new Socket("172.20.10.3", 8080);
+                socket = new Socket(LoginActivity.connection.getHost(), LoginActivity.connection.getPort());
                 writer = new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream()));
                 reader = new BufferedReader(
@@ -147,6 +148,29 @@ public class MovieList extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
 
         }
     }

@@ -15,8 +15,6 @@ public class ConnectionHandler implements Runnable {
     BufferedReader reader;
     BufferedWriter writer;
 
-    boolean closeSocket = true;
-
     public ConnectionHandler(Socket connectionSocket) {
         this.connectionSocket = connectionSocket;
 
@@ -46,11 +44,9 @@ public class ConnectionHandler implements Runnable {
         }
 
         try {
-            if (closeSocket) {
-                reader.close();
-                writer.close();
-                connectionSocket.close();
-            }
+            reader.close();
+            writer.close();
+            connectionSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
