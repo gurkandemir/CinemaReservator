@@ -33,7 +33,7 @@ public class ConnectionHandler implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(request);
+
         try {
             JSONObject req = new JSONObject(request);
             handleRequest(req);
@@ -126,7 +126,6 @@ public class ConnectionHandler implements Runnable {
     }
 
     public void sendReply(JSONObject response) {
-        System.out.println(response);
         try {
             writer.write(response.toString());
             writer.newLine();

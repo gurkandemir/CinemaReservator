@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86538b9a-31de-466f-af40-2e6b5d7616c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movie/MovieFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movie/MovieFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieDetail/MovieDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieDetail/MovieDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieList/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/movieList/MovieList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/ticket/TicketFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../client/CinemaReservation/app/src/main/java/com/visionless/cinemareservation/ui/ticket/TicketFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/connections/ConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/connections/ConnectionHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,6 +105,8 @@
       <workItem from="1575107536276" duration="58000" />
       <workItem from="1575216165355" duration="524000" />
       <workItem from="1575221269506" duration="1089000" />
+      <workItem from="1575318940117" duration="1832000" />
+      <workItem from="1575366435898" duration="29000" />
     </task>
     <servers />
   </component>
