@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        connection = new Connection("172.20.10.3", 8080);
+        connection = new Connection("54.245.129.91", 8080);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 

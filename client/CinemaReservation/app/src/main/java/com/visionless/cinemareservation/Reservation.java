@@ -27,7 +27,7 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 public class Reservation extends AppCompatActivity {
-    CountDownTimer countDownTimer;
+    static CountDownTimer countDownTimer;
     String movieName;
     String saloonName;
     String saloonId;
@@ -36,9 +36,9 @@ public class Reservation extends AppCompatActivity {
     String seatId;
 
     @Override
-    public void onBackPressed() {
+    public void finish() {
         this.countDownTimer.cancel();
-        finish();
+        super.finish();
     }
 
     public String seatIdCalculator(String id){
@@ -143,7 +143,7 @@ public class Reservation extends AppCompatActivity {
             }
 
             JSONObject req = null;
-
+            Reservation.countDownTimer.cancel();
             try {
                 writer.write(message.toString());
                 writer.newLine();

@@ -26,6 +26,7 @@ public class SignUpController {
         PreparedStatement preparedStatement = null;
         String SelectQuery = "select * from USER where username = '" + username +"'";
         String InsertQuery = "INSERT INTO USER (username, password) values" + "(?,?)";
+        ConnectionStarter.dbWrite.P();
         try {
             connection.setAutoCommit(false);
 
@@ -36,7 +37,6 @@ public class SignUpController {
                 response.put("error", "There exists a user with given username.");
             }
             else {
-                ConnectionStarter.dbWrite.P();
 
                 preparedStatement = connection.prepareStatement(InsertQuery);
 
@@ -46,8 +46,6 @@ public class SignUpController {
                 preparedStatement.close();
 
                 connection.commit();
-
-                ConnectionStarter.dbWrite.V();
 
                 response.put("status", "200");
                 response.put("username", username);
@@ -64,6 +62,7 @@ public class SignUpController {
         } finally {
             connection.close();
         }
+        ConnectionStarter.dbWrite.V();
         return response;
     }
 }
